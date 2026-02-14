@@ -1613,6 +1613,22 @@
                 accurateTrackBounce: true,
                 trackHash: true
             });
+            document.addEventListener("DOMContentLoaded", function() {
+                // Находим все картинки, у которых есть атрибут data-src
+                const images = document.querySelectorAll('img[data-src]');
+                
+                images.forEach(img => {
+                // Переносим значение из data-src в src
+                img.src = img.getAttribute('data-src');
+                
+                // По желанию: удаляем data-src после переноса, чтобы не мусорить в DOM
+                img.removeAttribute('data-src');
+                
+                // Если у вас был класс lazy-image или owl-lazy, 
+                // который скрывал картинку, можно его убрать или принудительно показать:
+                img.style.opacity = "1";
+                });
+            });
         </script>
         <!-- /Yandex.Metrika counter -->
         <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-117802369-1"></script>

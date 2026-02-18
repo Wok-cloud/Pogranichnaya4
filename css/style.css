@@ -1,15 +1,20 @@
-.todiscount {font-size: 1em;}+7
-
-.todiscount-main {
-	overflow: hidden;
+.todiscount {
+    font-size: 1em;
+}
++ 7 .todiscount-main {
+    overflow: hidden;
     border: 4px solid #efefef;
     margin: 15px auto;
-	color: #111;
-	background: #fff;
-	}
-	
-.todiscount p, .todiscount span, .todiscount td {color: #111;}
-	
+    color: #111;
+    background: #fff;
+}
+
+.todiscount p,
+.todiscount span,
+.todiscount td {
+    color: #111;
+}
+
 /*Таблица со скидками на текущий заказ*/
 .todiscount-order {
     display: -webkit-box;
@@ -18,110 +23,126 @@
     display: flex;
     -webkit-box-align: start;
     -webkit-align-items: flex-start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
 }
 .order-discounts td {
-	border-top: 1px solid #efefef;
-	border-bottom: 1px solid #efefef;
-	border-right: 1px solid #efefef;
-	border-left: 1px solid #efefef;
-	padding: 0.5em;
-	position: relative;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+    border-right: 1px solid #efefef;
+    border-left: 1px solid #efefef;
+    padding: 0.5em;
+    position: relative;
 }
-.todiscount-main .order-discounts thead tr td {border-top: none;}
+.todiscount-main .order-discounts thead tr td {
+    border-top: none;
+}
 
 .header_auth {
-     border: none;
-	 display: none;
+    border: none;
+    display: none;
 }
 
 /* Показать Лео*/
-a.js-products-list-link[href*="list=favorites"]{
-  display: none !important;
+a.js-products-list-link[href*="list=favorites"] {
+    display: none !important;
 }
-
 
 /* Показать Лео */
-.header-nav-custom-pr .js-preview-compare{
-  display: none !important;
+.header-nav-custom-pr .js-preview-compare {
+    display: none !important;
 }
-
-
 
 .header_cart {
-     display: none;
+    display: none;
 }
-
 
 /*Таблица с накопительными скидками*/
 .customer-discounts td {
-	border-top: 1px solid #efefef;
-	border-bottom: 1px solid #efefef;
-	border-right: 1px solid #efefef;
-	border-left: 1px solid #efefef;
-	padding: 0.5em;
-	position: relative;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+    border-right: 1px solid #efefef;
+    border-left: 1px solid #efefef;
+    padding: 0.5em;
+    position: relative;
 }
-.todiscount-main .customer-discounts thead tr td {border-bottom:none}
-.todiscount-main .customer-discounts tbody tr:last-child td {border-bottom: none}
-.customer-discounts-more + .todiscount-customer .customer-discounts thead tr td {border-top: 1px solid #efefef;}
-
+.todiscount-main .customer-discounts thead tr td {
+    border-bottom: none;
+}
+.todiscount-main .customer-discounts tbody tr:last-child td {
+    border-bottom: none;
+}
+.customer-discounts-more
+    + .todiscount-customer
+    .customer-discounts
+    thead
+    tr
+    td {
+    border-top: 1px solid #efefef;
+}
 
 /*Общие стили оформления для таблиц скидок*/
-.customer-discounts, .order-discounts {
+.customer-discounts,
+.order-discounts {
     border-right: 1px solid #efefef;
-	padding: 0px;
-	background: #fff;
+    padding: 0px;
+    background: #fff;
 }
 
-.todiscount-main .customer-discounts, .todiscount-main .order-discounts {
-	float: left;
-	width: 50%;
-	margin: 0px;
+.todiscount-main .customer-discounts,
+.todiscount-main .order-discounts {
+    float: left;
+    width: 50%;
+    margin: 0px;
 }
 
-.customer-discounts thead tr td, .order-discounts thead tr td {font-weight: bold;}
-
-
+.customer-discounts thead tr td,
+.order-discounts thead tr td {
+    font-weight: bold;
+}
 
 /*Блок с призывом "купить ещё", чтобы получить скидку*/
-.customer-total, .order-total, .category-total {
+.customer-total,
+.order-total,
+.category-total {
     text-align: center;
     padding: 20px 10px;
-    background: #efefef;  /*Фон блока*/
+    background: #efefef; /*Фон блока*/
     box-sizing: border-box;
-	margin: 0;
+    margin: 0;
 }
 
-.todiscount-main .customer-total, .todiscount-main .order-total {
-	float: left;
+.todiscount-main .customer-total,
+.todiscount-main .order-total {
+    float: left;
     width: 46%;
-	margin: 2%;
+    margin: 2%;
 }
 
-.todiscount .sum, .todiscount .discount {
-	font-size: 1.2em;
-	font-weight: bold;
-	white-space: nowrap;
+.todiscount .sum,
+.todiscount .discount {
+    font-size: 1.2em;
+    font-weight: bold;
+    white-space: nowrap;
 }
-	
-	
-	
+
 /*Строка таблицы "Ваша скидка"*/
-.customer-discounts .select td, .order-discounts .select td, .customer-discounts .select span, .order-discounts .select span {
-  color:red;
+.customer-discounts .select td,
+.order-discounts .select td,
+.customer-discounts .select span,
+.order-discounts .select span {
+    color: red;
 }
-
 
 /*Всплывающие подсказки*/
-.order-discounts thead tr td span, .customer-discounts thead tr td span {
-	font-family: arial, helvetica;
-	font-weight: bold;
-	display: inline-block;
+.order-discounts thead tr td span,
+.customer-discounts thead tr td span {
+    font-family: arial, helvetica;
+    font-weight: bold;
+    display: inline-block;
     font-size: 11px;
     background: red;
-	background: rgba(255, 0, 0, 0.75);
+    background: rgba(255, 0, 0, 0.75);
     color: #fff;
     width: 8px;
     height: 9px;
@@ -129,84 +150,84 @@ a.js-products-list-link[href*="list=favorites"]{
     border-radius: 50%;
     padding: 3px 3px 3px 4px;
     line-height: 11px;
-	box-sizing: content-box;
-	cursor:pointer;
+    box-sizing: content-box;
+    cursor: pointer;
 }
-.order-discounts thead tr td em, .customer-discounts thead tr td em {
+.order-discounts thead tr td em,
+.customer-discounts thead tr td em {
     font-weight: normal;
     font-size: 10px;
 }
 
-.customer-discounts-more {clear: both;padding: 0.5em 0.5em 1em 0.5em;margin: 0;}
-.customer-discounts-more a {border-bottom: 1px dashed; text-decoration: none}
+.customer-discounts-more {
+    clear: both;
+    padding: 0.5em 0.5em 1em 0.5em;
+    margin: 0;
+}
+.customer-discounts-more a {
+    border-bottom: 1px dashed;
+    text-decoration: none;
+}
 
-.customer-discounts tbody td, .order-discounts tbody td {
-	white-space: nowrap;
+.customer-discounts tbody td,
+.order-discounts tbody td {
+    white-space: nowrap;
 }
 
 /* media */
 @media only screen and (max-width: 768px) {
-	.todiscount-order {
-		-webkit-flex-wrap: wrap;
-			-ms-flex-wrap: wrap;
-				flex-wrap: wrap;
-	}
-	.todiscount-main .customer-discounts, .todiscount-main .order-discounts {
-		width: 100%;
-	}
-	.todiscount-main .customer-total, .todiscount-main .order-total {
-		width: calc(100% - 4%);
-	}
+    .todiscount-order {
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .todiscount-main .customer-discounts,
+    .todiscount-main .order-discounts {
+        width: 100%;
+    }
+    .todiscount-main .customer-total,
+    .todiscount-main .order-total {
+        width: calc(100% - 4%);
+    }
 }
 
-
-.map-wrapper{
-  display: flex;
-  justify-content: center;
+.map-wrapper {
+    display: flex;
+    justify-content: center;
 }
 
-.map-wrapper iframe{
-  max-width: 1200px;   /* или 100%, если хочешь на всю ширину */
-  width: 100%;
+.map-wrapper iframe {
+    max-width: 1200px; /* или 100%, если хочешь на всю ширину */
+    width: 100%;
 }
-
-
-
 
 .cat-menu__el-link {
-	cursor: default;
+    cursor: default;
 }
-
-
 
 .main-slider-photos_el-content {
-cursor:default;
+    cursor: default;
 }
 
-
 .promos-tile__el {
-cursor:default;
+    cursor: default;
 }
 
 .js-product-tile,
 .js-product-cart-preview,
 .js-tile-gallery {
-  pointer-events: none;
+    pointer-events: none;
 }
-
 
 .pr-stock,
 .product-saving,
-.product-discount,
- {
-  display: none !important;
+.product-discount {
+    display: none !important;
 }
-
 
 .infoblocks_item .text-link {
-	text-decoration: underline !important;
+    text-decoration: underline !important;
 }
-
 
 /* Бренды левая стрелка
 .owl-prev {
@@ -231,7 +252,6 @@ cursor:default;
     cursor: default !important;
 }
 
-
 .old-price {
     display: none;
 }
@@ -242,13 +262,11 @@ cursor:default;
     display: none;
 }
 
-
 /* Стрелки у карусели наших брендов */
 .js-brands-mainpage-direction .owl-next,
 .js-brands-mainpage-direction .owl-prev {
     display: none !important;
 }
-
 
 /*Кнопка выгрузить товары */
 #cp_btn,
@@ -256,33 +274,37 @@ cursor:default;
 .cp_btn,
 .cp_widget,
 .cp_container {
-  display: none !important;
+    display: none !important;
 }
 /* Иконка дефолт курсор */
 .infoblocks_item-icon {
-	cursor:default !important;
+    cursor: default !important;
 }
 
 .infoblocks_item_title {
-	cursor:pointer;
+    cursor: pointer;
 }
 
-
 .infoblocks_item-text {
-	cursor:default !important;
+    cursor: default !important;
 }
 
 .product-tile_name {
-       height: 75px;
+    height: 75px;
 }
 
-
-
-
 @media (max-width: 875px) {
+    .cofeandtea {
+        display: none;
+    }
+}
 
-  .cofeandtea {
-	display: none;
-  }
+@media (max-width: 640px) {
+    .brands-mainpage {
+        white-space: wrap;
+    }
 
+    .brands-mainpage .owl-carousel {
+        text-align: center;
+    }
 }

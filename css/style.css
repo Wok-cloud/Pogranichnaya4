@@ -308,3 +308,7 @@ a.js-products-list-link[href*="list=favorites"] {
         text-align: center;
     }
 }
+
+.header_inner {
+    flex-wrap: wrap;
+}
